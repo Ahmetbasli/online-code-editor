@@ -33,47 +33,10 @@ class Header {
     };
     setUpSelect();
 
-    // save btn
-    // save button
     saveBtn.addEventListener("click", () => {
       overlay.classList.add("overlay--active");
     });
-    saveBtnInsidePopup.addEventListener("click", () => {
-      const name = inputInsidePopup.value || "noName";
-      const code = {
-        html: sessionStorage.getItem("html_code"),
-        css: sessionStorage.getItem("css_code"),
-        js: sessionStorage.getItem("js_code"),
-      };
 
-      const item = {
-        id: new Date().valueOf(),
-        [`${name}`]: code,
-      };
-
-      if (localStorage.getItem("history") === null) {
-        const historyArr = [item];
-        localStorage.setItem("history", JSON.stringify(historyArr));
-      } else {
-        const historyArr = JSON.parse(localStorage.getItem("history"));
-        historyArr.push(item);
-        localStorage.setItem("history", JSON.stringify(historyArr));
-      }
-
-      const newOption = document.createElement("option");
-      newOption.value = historySelect.children.length - 1;
-      newOption.innerHTML = name;
-      historySelect.appendChild(newOption);
-
-      overlay.classList.remove("overlay--active");
-      inputInsidePopup.value = "";
-    });
-    // popupClose btn
-    popUpCloseBtn.addEventListener("click", () => {
-      overlay.classList.remove("overlay--active");
-    });
-
-    // on select Change
     historySelect.addEventListener("change", () => {
       if (
         localStorage.getItem("history") === null ||

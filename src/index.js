@@ -9,3 +9,4 @@ const popup = new Popup();
 
 header.apply();
 main.apply();
+popup.apply();
