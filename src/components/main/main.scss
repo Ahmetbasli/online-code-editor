@@ -1,0 +1,61 @@
+.main {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main__frame {
+  flex: 1;
+  border: 1px solid blue;
+}
+.main__wrap__code {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+
+  overflow-y: auto;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.main__wrap {
+  border: 1px solid black;
+}
+
+.main__wrap--minimize {
+  height: 4vh;
+}
+
+.main__wrap__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.main__wrap__buttons button {
+  margin-left: 5px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.main__wrap__code div {
+  flex: 1;
+  border: 1px solid black;
+  /* height: 100%; */
+}
+.main__wrap__code textarea {
+  width: 100%;
+  height: 30vh;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  resize: vertical;
+}
+
+.main__wrap__code textarea::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.main__wrap__code textarea::-webkit-scrollbar-thumb {
+  background-color: black;
+}

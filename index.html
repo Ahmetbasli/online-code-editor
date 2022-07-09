@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Live Code Editor</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <select name="history" id="history">
+        <option value="default">default</option>
+      </select>
+      <button class="header__button">save</button>
+    </div>
+    <div class="main">
+      <iframe class="main__frame" id="content"></iframe>
+      <div class="main__wrap">
+        <div class="main__wrap__buttons">
+          <button class="main__wrap__buttons__minimize">minimize</button>
+          <button class="main__wrap__buttons__runBtn">run</button>
+        </div>
+        <div id="htmlCode" class="main__wrap__code">
+          <div class="main__wrap__code__html">
+            <h1>HTML</h1>
+            <textarea></textarea>
+          </div>
+          <div id="cssCode" class="main__wrap__code__css">
+            <h1>CSS</h1>
+            <textarea></textarea>
+          </div>
+          <div id="jsCode" class="main__wrap__code__js">
+            <h1>JS</h1>
+            <textarea spellcheck="false"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Save your Code</h2>
+        <a class="popup__close" href="#">&times;</a>
+        <input class="popup__input" type="text" />
+        <button class="popup__btn">save</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.header {
+  width: 90vw;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    width: 100px;
+    color: green;
+    border: 3px solid green;
+    cursor: pointer;
+  }
+}
