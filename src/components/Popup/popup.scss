@@ -8,6 +8,7 @@
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay--active {
   transition: opacity 300ms;
   visibility: visible;
@@ -22,13 +23,14 @@
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
 .popup__close {
   position: absolute;
   top: 20px;
@@ -38,10 +40,12 @@
   font-weight: bold;
   text-decoration: none;
   color: #333;
+
+  &:hover {
+    color: green;
+  }
 }
-.popup__close:hover {
-  color: green;
-}
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
