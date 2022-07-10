@@ -39,6 +39,11 @@ class Header {
         localStorage.getItem("history") === null ||
         historySelect.value === "default"
       ) {
+        html_code.value = "";
+        css_code.value = "";
+        js_code.value = "";
+        updateSessionStorage();
+        run();
         return;
       }
       const historyArr = JSON.parse(localStorage.getItem("history"));
