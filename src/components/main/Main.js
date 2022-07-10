@@ -40,9 +40,7 @@ class Main {
 
     document.addEventListener("keydown", (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "s") {
-        // Prevent the Save dialog to open
         e.preventDefault();
-        // Place your code here
         run();
       }
     });
