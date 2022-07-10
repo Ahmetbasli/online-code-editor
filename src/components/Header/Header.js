@@ -11,10 +11,7 @@ class Header {
       .querySelector("textarea");
     const js_code = document.getElementById("jsCode").querySelector("textarea");
     const saveBtn = document.querySelector(".header__button");
-    const inputInsidePopup = document.querySelector(".popup__input");
-    const saveBtnInsidePopup = document.querySelector(".popup__btn");
     const overlay = document.querySelector(".overlay");
-    const popUpCloseBtn = document.querySelector(".popup__close");
     const historySelect = document.getElementById("history");
 
     const setUpSelect = () => {

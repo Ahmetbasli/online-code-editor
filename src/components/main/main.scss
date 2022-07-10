@@ -21,11 +21,14 @@
 }
 
 .main__wrap {
+  height: 43vh;
   border: 1px solid black;
+  transition: height 1s ease-out;
 }
 
 .main__wrap--minimize {
-  height: 4vh;
+  height: 32px;
+  padding: 0;
 }
 
 .main__wrap__buttons {

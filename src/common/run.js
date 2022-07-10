@@ -1,3 +1,5 @@
+const content = document.querySelector(".main__frame");
+
 const run = () => {
   // Executing HTML, CSS & JS code
   content.contentDocument.body.innerHTML = `<style>${
